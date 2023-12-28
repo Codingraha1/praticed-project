@@ -1,0 +1,139 @@
+
+
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:italic;
+  }
+
+
+  body{
+    line-height:1.7;
+  }
+  h1{
+    font-size :23px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 0px 60px 0px ;
+}
+form{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   margin-bottom:50px ;
+}
+
+#search_input{
+    width: 300px;
+    max-width:  350px; 
+    border-radius: 4px;
+    height: 24px;
+    box-shadow :15px 3px 3px 1px rgb(197, 245, 245);
+    font-size: 15px;
+    color:black;
+    margin-left:20px;
+    text-align:center;
+    
+}
+search_input::placeholder {
+  color: rgb(155, 155, 160);
+  margin-left:80px ;
+
+}
+
+#image_search{
+
+  color:black;
+  background-color: green;
+  height:24px;
+  border-radius: 4px;
+  margin-left :5px;
+  width: 65px; 
+  border:none;
+  cursor: pointer;
+  box-shadow :0 0 6px rgb(163, 180, 170);
+  font-size: 16px;
+
+
+}
+
+.contain_all_images{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  max-width: 1000px;
+  margin:0 auto;
+
+}
+
+
+.first_image{
+  margin-bottom: 60px;
+ 
+  height: 25%;
+  width: 25%;
+  border-radius: 4px;
+  box-shadow :0 0 6px rgb(163, 180, 170);
+  overflow: hidden;
+}
+
+.first_image img{
+  width:100%;
+  height:200px;
+  object-fit: cover;
+  transition:opacity 0.2s ease-in-out;
+}
+.first_image img:hover {
+
+  opacity:0.5;
+
+}
+
+
+.first_image a{
+  font-size:23px;
+  text-decoration:underline;
+  color:black;
+  display:block;
+  padding: 23px;
+  text-transform:capitalize;
+  text-align:center;
+  
+}
+
+
+#show_more{
+  background-color: rgb(25, 122, 90);
+  border:none;
+  text-align:center;
+  color:rgb(207, 300, 64);
+  padding:6px;
+  border-radius: 5px;
+  margin: 45px auto;
+  font-size: 21px;
+  cursor: pointer;
+ 
+  display: block;
+ 
+  }
+
+
+@media  screen and  (max-width: 768px){
+
+  .contain_all_images{
+    padding: 20px;
+
+  }
+  
+  .first_image{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .first_image{
+    width:100%;
+  }
+  
+}
